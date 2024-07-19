@@ -124,10 +124,10 @@ configure () {
         -D WITH_OPENGL=ON
         -D CMAKE_BUILD_TYPE=RELEASE
         -D CMAKE_INSTALL_PREFIX=/usr/local
-        -D PYTHON3_LIBRARY=/home/itr/miniconda3/envs/field_test/lib/python3.8
-        -D PYTHON3_INCLUDE_DIR=/home/itr/miniconda3/envs/field_test/include/python3.8
-        -D PYTHON3_EXECUTABLE=/home/itr/miniconda3/envs/field_test/bin/python
-        -D PYTHON3_PACKAGES_PATH=/home/itr/miniconda3/envs/field_test/lib/python3.8/site-packages
+        -D PYTHON3_LIBRARY=/home/itr/miniforge3/envs/field_test/lib/python3.8
+        -D PYTHON3_INCLUDE_DIR=/home/itr/miniforge3/envs/field_test/include/python3.8
+        -D PYTHON3_EXECUTABLE=/home/itr/miniforge3/envs/field_test/bin/python
+        -D PYTHON3_PACKAGES_PATH=/home/itr/miniforge3/envs/field_test/lib/python3.8/site-packages
         -D INSTALL_PYTHON_EXAMPLES=ON
         -D INSTALL_C_EXAMPLES=ON
         -D OPENCV_ENABLE_NONFREE=ON
@@ -145,7 +145,7 @@ configure () {
     cd opencv
     mkdir build
     cd build
-    export CPLUS_INCLUDE_PATH=/home/itr/miniconda3/envs/field_test/lib/python3.8
+    export CPLUS_INCLUDE_PATH=/home/itr/miniforge3/envs/field_test/lib/python3.8
     cmake ${CMAKEFLAGS} .. 2>&1 | tee -a configure.log
 }
 
